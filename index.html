@@ -2,347 +2,279 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Cutive+Mono|Expletus+Sans|Major+Mono+Display|Nixie+One|Open+Sans+Condensed:300|Petit+Formal+Script|Quicksand|Raleway+Dots|Syncopate&display=swap" rel="stylesheet">
-<script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-<link rel="stylesheet" href="myweb.css">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.16/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-<script src="jquery-3.4.0.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <title>Nandita Mohan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./myweb.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script src="jquery-3.4.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&&family=Pontano+Sans&family=Poiret+One&display=swap" rel="stylesheet">
 </head>
-<style>
-    body {
-        background-image: url("https://columbiaairport.com/wp-content/uploads/2015/12/CAE-Website-Full-Background-Texture1902x1200-9.jpg");
-        background-position: 50% 50%;
-        background-color: rgb(24, 23, 23);
-        background-repeat: repeat;
-        -webkit-background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        opacity: 1;
-        transition: 1s opacity;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .me {
-        padding-left:18%; 
-        max-width:100px;
-        position: relative;
-    }
-
-    .container-about {
-      position: absolute;
-      padding-left: 5%;
-      margin: 10px;
-      padding-right:10%; 
-      max-width:50%;
-    }
-
-    .aboutme {
-        cursor: pointer;
-        position: absolute;
-        padding-left: 5%;
-        margin: 10px;
-        padding-right:10%; 
-        max-width:100%;
-        color: rgba(43, 42, 42, 0.801);
-        font-size: 40px;
-        font-family: 'Expletus Sans', cursive;
-    }
-
-    .aboutme-indent {
-        margin-left: 80px;
-        color: hsla(184, 74%, 30%, 0.801);
-        font-size: 18px;
-        font-family: 'Nixie One', cursive;
-        max-width: 500px;
-    }
-
-    .row {
-      display: -ms-flexbox; /* IE 10 */
-      display: flex;
-      -ms-flex-wrap: wrap; /* IE 10 */
-      flex-wrap: wrap;
-      padding: 0 4px;
-    }
-
-    /* Create two equal columns that sits next to each other */
-    .column {
-      -ms-flex: 50%; /* IE 10 */
-      flex: 50%;
-      padding: 0 4px;
-    }
-
-    .column img {
-      margin-top: 8px;
-      vertical-align: middle;
-    }
-
-    /* Style the buttons */
-    .btn {
-      border: none;
-      outline: none;
-      padding: 10px 16px;
-      background-color: #f1f1f1;
-      cursor: pointer;
-      font-size: 18px;
-    }
-
-    .btn:hover {
-      background-color: #ddd;
-    }
-
-    .btn.active {
-      background-color: #666;
-      color: white;
-    }
-/* Nav bar */
-    .sidenav {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-    }
-
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-
-    @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
-    }
-
-    .img:hover{
-      color: #424242; 
-      -webkit-transition: all .3s ease-in;
-      -moz-transition: all .3s ease-in;
-      -ms-transition: all .3s ease-in;
-      -o-transition: all .3s ease-in;
-      transition: all .3s ease-in;
-      opacity: 1;
-      transform: scale(1.25);
-      -ms-transform: scale(1.25); /* IE 9 */
-      -webkit-transform: scale(1.25); /* Safari and Chrome */
-    }
-    .rotate {
-      transform: rotate(-90deg);
-      position: absolute;
-      left: 0;
-      margin-top: 18%;
-    }
-
-    .quote {
-      position:absolute; 
-      max-width: 285px; 
-      top:200px;left:30px;
-      font-family: Petit Formal Script; 
-      font-size:30px; 
-      color:white; 
-      text-align:left; 
-      -webkit-animation: fadein 5s;
-      -moz-animation: fadein 5s; /* Firefox < 16 */
-      -ms-animation: fadein 5s; /* Internet Explorer */
-      -o-animation: fadein 5s; /* Opera < 12.1 */
-      animation:fadein 5s;
-    }
-    keyframes fadein @{
-      from { opacity: 0; }
-      to   { opacity: 1; }
-    }
-
-    /* Firefox < 16 */
-    @-moz-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
-
-    /* Safari, Chrome and Opera > 12.1 */
-    @-webkit-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
-
-    /* Internet Explorer */
-    @-ms-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
-
-    /* Opera < 12.1 */
-    @-o-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
-</style>
 <body>
-    <span id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#Home">Home</a>        
-        <a href="#About">About</a>
-        <a href="#Photo">Photography</a>
-        <a href="#Contact">Contact</a>
-    </span>
-      <span style="font-size:30px;cursor:pointer; position: fixed; right:20px; top:2%;" onclick="openNav()">&#9776;</span>
-    <span><img src="logo.png" style="width:7%;height:14%"></img></span>
-    <span>        
-        <a id="Home" style="font-size:85px; color: rgba(41, 41, 41, 0.11);font-family: 'Syncopate', sans-serif; text-align:center; position:absolute; top:2%; left:16%">NANDITA MOHAN</a>          
-    </span>
-    </div>
-    <div style="position:relative;">
-    <span class = "quote">"Someone's sitting in the shade today because someone planted a tree a long time ago." 
-        <br><br>
-        <span style="font-family:Nixie One">― Warren Buffett</span></span>
-    <img src="imgs/roots.jpg" width="100%"></img>
+<div id="#header" class="headerDiv">
+  <img class="headerImg" onclick="toggleTabs('homeTab', '#home');" src="logo.png"></img>    
+  <div class="headerTitle">NANDITA MOHAN</div>   
+  <div class="navBar">    
+    <div class="topnav">
+      <a id="homeTab" href="#home" class="active" onclick="toggleTabs('homeTab', '#home');">Home</a>
+      <a id="aboutTab" href="#about" onclick="toggleTabs('aboutTab', '#about');">About</a>
+      <a id="projectsTab" href="#projects" onclick="toggleTabs('projectsTab', '#projects');">Projects</a>      
+      <a id="photogTab" href="#photog" onclick="toggleTabs('photogTab', '#photog');">Photography</a>
+    </div> 
+  </div>  
+</div>
+<div class="bottomDiv">
+  <img class="bottomButton" src="topNav.png" onClick="document.getElementById('#header').scrollIntoView();"><img>
+</div>
+
+<!-- HOME TAB -->
+<div class='homeWrapper' id="#home"> 
+  <div class="welcomeDiv">
+  <img class="welcomeImg" src="welcome.png"></img>
   </div>
-
-    <!-- ABOUT SECTION -->
-    <div class="rotate" style="font-size:85px; color: rgba(41, 41, 41, 0.11);font-family: 'Syncopate', sans-serif;">ABOUT</div>   
-    <div id="About" style="display: 'inline-block'">
-        <span class="me"><img src="me.png"></img></span>
-        <span style="display:inline-block;">
-        <span class="aboutme" href="#" onclick="toggle_visibility('comp','pd','lead','other');">| Computing</span><br><br><br>
-        <span class="aboutme-indent" style="display:none" id="comp">I'm a Computer Science major at Cornell University. Areas of interest include Natural Language Processing, Software Development, and Technology Policy.</span><br>
-        <span class="aboutme" href="#" onclick="toggle_visibility('pd','comp','lead','other');">| Product Design</span><br><br><br>
-        <span class="aboutme-indent" style="display:none" id="pd">My past 2 summers at Microsoft, I have developed features for Azure while focusing on Customer impact via Accessibility, Data analytics, and UX design.</span><br>                
-        <span class="aboutme" href="#" onclick="toggle_visibility('lead','comp','pd','other');">| Leadership</span><br><br><br>
-        <span class="aboutme-indent" style="display:none" id="lead">I lead the organization Women in Computing at Cornell as Co-President for the 2018-19 year, managing a team of 30 and making impactful changes to our Cornell network of 1700+. I am also a Rewriting the Code Fellow. </span><br>                
-        <span class="aboutme" href="#" onclick="toggle_visibility('other','comp','pd','lead');">| Other</span><br><br><br>
-        <span class="aboutme-indent" style="display:none" id="other">I am part of the Photography Staff of the Cornell Daily Sun and 161 Faces of Cornell project. Love music, reading, coffee, and conversation - reach out and I'd be happy to chat!</span><br><br><br><br><br>
-      </span>
-    </div>
-    <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
+  <div class="welcomeDiv" id="#home">  
+  <img class="arrow" type="button" src="downArrow.png" onclick="document.getElementById('#aboutinfo').scrollIntoView();"></img>
+  </div>
     
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
-    <a name="Photo"/>        
-    <div style="text-align: center; padding-bottom:30px;"><img src="cam.png" style="width:20%; height:20%;"></img></div>
-    <!-- Photo Grid -->
-    <div class="row" style= "text-align:center"> 
-      <div class="column">
-        <img class= "img" src="imgs/acapella.jpg" style="width:30%">
-        <img class= "img" src="imgs/school_girl.jpg" style="width:30%">
-        <img class= "img" src="imgs/monkeys.jpg" style="width:30%">
-      </div>
-      <div class="column">
-        <img class= "img" src="imgs/SF.jpg" style="width:30%">
-        <img class= "img" src="imgs/holi.jpg" style="width:30%">
-        <img class= "img" src="imgs/soccer.jpg" style="width:30%">
-      </div>  
-      <div class="column">
-        <img class= "img" src="imgs/palace_views.jpg" style="width:30%">
-        <img class= "img" src="imgs/squirrel.jpg" style="width:30%">
-        <img class= "img" src="imgs/taj.jpg" style="width:30%">
-      </div>
+  <div class="helloDiv" id="#aboutinfo">
+    <span>
+    <img class="helloImg" src="hello_100.png"></img>
+    </span>
+    <span class="textDiv">
+      <text class="helloText"> Hello, I'm Nandita. I am a Software Engineer at Microsoft and policy enthusiast on the side.
+            I love seeing the world through my camera lens, and enjoy writing, nature and everything coffee-related.
+            Reach out and I'd love to chat! </text>
+      <div style:"display:flex">
+      <a href="https://github.com/nanditamohan/" target="_blank"><img title="Github" src="imgs/git.png" style="cursor:pointer; position:absolute; left: 35%; margin-top:55px; width:30px"></img></a>      
+      <a href="mailto: nkm39@cornell.edu"><img title="Email" src="imgs/email.png" style="cursor:pointer; position:absolute; right:25%; margin-top:59px; width:30px"></img></a>
+      <a href="https://tinyurl.com/nandita-linkedin" target="_blank"><img title="Linkedin" src="imgs/linkedin.png" style="cursor:pointer; position:absolute; right:35%; margin-top:55px; width:30px"></img></a> 
+      <a href="https://medium.com/@nandita.mohan" target="_blank"><img title="Medium" src="imgs/medium.png" style="cursor:pointer; position:absolute; left:45%; margin-top:55px; width:40px"></img></a>      
     </div>
-    <script>
+    </span>
+  </div>
+</div>
 
-    // Get the elements with class="column"
-    var elements = document.getElementsByClassName("column");
+<!-- ABOUT TAB -->
+<div class="aboutWrapper" id="#about"> 
+  <div class="meDiv">
+      <img class="meImg" src="moi.png"></img>
+    <span class="meTextDiv">
+      <text class="meText">
+        I am a technologist who loves the humanities. I see the two as interchangeable, and believe that 
+        the best of technology masters a keen empathy and understanding towards human psychology 
+        and interaction with the world.
+        <br><br>
+        Eager to use the skills I acquired during my time at Cornell for improving the everyday lives of people,
+        I try to connect this personal mission with my work. 
+        <br><br>
+        I am also very interested in politics, and have volunteered with several political campaigns in the past 5 years! 
+        Tech policy is a budding interest of mine, and I have been exploring several topics and literature in this area.
+        <br><br>
+        Please reach out for any help I could provide, or project ideas you'd like to share. 
+        Happy to talk. <text style="font-size:20px">☕</text> 
+      </text>
+    </span>
+  </div>  
+  <div id="#experience" class="experienceDiv">
+    <span>
+      <img class="experienceImg" src="experience.png"></img>
+    </span>
+    <span>
+        <img class="timelineImg" src="timeline.png"></img>
+    </span>
+  </div>
+</div>
 
-    // Declare a loop variable
-    var i;
-
-    // Full-width images
-    function one() {
-        for (i = 0; i < elements.length; i++) {
-        elements[i].style.msFlex = "100%";  // IE10
-        elements[i].style.flex = "100%";
-      }
-    }
-
-    // Two images side by side
-    function two() {
-      for (i = 0; i < elements.length; i++) {
-        elements[i].style.msFlex = "50%";  // IE10
-        elements[i].style.flex = "50%";
-      }
-    }
-
-    // Four images side by side
-    function four() {
-      for (i = 0; i < elements.length; i++) {
-        elements[i].style.msFlex = "25%";  // IE10
-        elements[i].style.flex = "25%";
-      }
-    }
-
-    function toggle_visibility(id, ot1,ot2,ot3) {
-       var e = document.getElementById(id);
-       var o1 = document.getElementById(ot1);
-       var o2 = document.getElementById(ot2);
-       var o3 = document.getElementById(ot3);
-       if(o1.style.display == 'block')
-          o1.style.display = 'none';
-      if(o2.style.display == 'block')
-          o2.style.display = 'none';
-      if(o3.style.display == 'block')
-          o3.style.display = 'none';
-      if(e.style.display == 'block')
-          e.style.display = 'none';
-      else
-          e.style.display = 'block';
-    }
-
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("myHeader");
-    var btns = header.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
-    </script>
-    <div id= "Contact" style="text-align:center; padding-top:20px; padding-bottom:10px;">
-      <img src="sig_black.png" style="width:200px;"></img>
-      <a href="mailto: nkm39@cornell.edu"><img title="Email" src="imgs/email.png" style="cursor:pointer; position:absolute; right:20%; margin-top:55px; width:30px"></img></a>
-      <a href"https://github.com/nanditamohan" target="_blank"><img title="Github" src="imgs/git.png" style="cursor:pointer; position:absolute; left:20%; margin-top:55px; width:30px"></img></a>      
-      <a href="https://tinyurl.com/nandita-linkedin" target="_blank"><img title="Linkedin" src="imgs/linkedin.png" style="cursor:pointer; position:absolute; right:15%; margin-top:55px; width:30px"></img></a> 
-      <a href="https://medium.com/@nkm39" target="_blank"><img title="Medium" src="imgs/medium.png" style="cursor:pointer; position:absolute; left:15%; margin-top:55px; width:40px"></img></a>      
-      
+<!-- PROJECTS TAB -->
+<div class="projectsWrapper" id="#projects"> 
+    <div class="projectItem">
+      <img class="projectImg" src="microsoft.png"></img>
+      <div class="projectDescDiv">
+        <text class="projectDesc"> 
+            I am a Software Engineer at Microsoft, within the 
+            <a style="font-weight:bold" href="https://www.microsoft.com/en-us/ai/ai-platform" target="_blank">AI Platform division</a>, 
+            creating tools for customers to have easier access and utility of machine 
+            learning tools in their businesses and work. <br><br>
+            In the past, I also interned with the Azure Monitor and Azure Software Defined Networking teams.
+        </text>
+      </div>
+  </div>
+  <div class="projectItem">
+          <img class="projectImg" src="swing.png"></img>
+        <div class="projectDescDiv">
+            <text class="projectDesc"> 
+                Currently helping with the mobile frontend development of 
+                <a style="font-weight:bold" href="https://www.swingcampaign.com/" target="_blank">Swing</a>, 
+                which serves to brigde the gap between politics and people, helping constituents connect directly
+                with their representatives and their actions.
+            </text>
+          </div>
     </div>
+    <div class="projectItem">
+        <img class="projectImg" src="lii.png"></img>
+      <div class="projectDescDiv">
+          <text class="projectDesc"> 
+            Worked with the 
+            <a style="font-weight:bold" href="https://www.law.cornell.edu/lii/about/who_we_are" target="_blank">Legal Information Institute</a>, 
+            which provides access to American and international law to 30 million unique visitors per year, for my Computer Science Master of Engineering project, 
+            where I researched extractive summarization techniques for legal texts, specifically the U.S. Code. 
+          </text>
+        </div>
+    </div>
+    <div class="projectItem">
+        <img class="projectImg" src="newstory.png"></img>
+      <div class="projectDescDiv">
+          <text class="projectDesc"> 
+              Created dashboards and analyzed housing metrics to visualize the impact of 
+              <a style="font-weight:bold" href="https://newstorycharity.org/" target="_blank">New Story</a> 
+              housing/shelter access on underdeveloped communities around the world.
+          </text>
+        </div>
+    </div>
+</div>    
+
+<!-- PHOTOGRAPHY TAB -->
+<div class="photogWrapper" id="#photog"> 
+  <a name="Photo"/>        
+  <div style="text-align: center; padding-bottom:30px;"><img src="cam.png" style="width:20%; height:20%;"></img></div>
+  <!-- Photo Grid -->
+  <div class="row" style= "text-align:center"> 
+    <div class="column">
+      <img class= "img" src="imgs/acapella.jpg" style="width:30%">
+      <img class= "img" src="imgs/school_girl.jpg" style="width:30%">
+      <img class= "img" src="imgs/monkeys.jpg" style="width:30%">
+    </div>
+    <div class="column">
+      <img class= "img" src="imgs/SF.jpg" style="width:30%">
+      <img class= "img" src="imgs/holi.jpg" style="width:30%">
+      <img class= "img" src="imgs/soccer.jpg" style="width:30%">
+    </div>  
+    <div class="column">
+      <img class= "img" src="imgs/palace_views.jpg" style="width:30%">
+      <img class= "img" src="imgs/squirrel.jpg" style="width:30%">
+      <img class= "img" src="imgs/taj.jpg" style="width:30%">
+    </div>
+    <div class="column">
+        <img class= "img" src="imgs/snowday.jpg" style="width:30%">
+        <img class= "img" src="imgs/gathering.jpg" style="width:30%">
+        <img class= "img" src="imgs/vetschool.jpg" style="width:30%">
+      </div>
+  </div>
+</div>    
+<div class='copyright'>
+  <text class='copyText'>© 2020 Nandita Mohan. Created with 💛</text>
+</div>
 </body>
+
+<script>
+  function toggleTabs(tabName, divName) {
+    var tab = document.getElementById(tabName);
+    //refresh all tabs
+    var home = document.getElementById('homeTab');
+    var about = document.getElementById('aboutTab');
+    var proj = document.getElementById('projectsTab');
+    var photog = document.getElementById('photogTab');
+    home.classList.remove("active");
+    about.classList.remove("active");
+    proj.classList.remove("active");
+    photog.classList.remove("active");
+    //activate tab clicked
+    tab.className = 'active';
+
+    //remove all divs
+    var homeDiv = document.getElementById('#home');
+    var aboutDiv = document.getElementById('#about');
+    var photogDiv = document.getElementById('#photog');
+    var projectsDiv = document.getElementById('#projects');
+    var activeDiv = document.getElementById(divName);
+    homeDiv.style.display = 'none';
+    aboutDiv.style.display = 'none';
+    photogDiv.style.display = 'none';
+    projectsDiv.style.display = 'none';
+    // put in relevant div
+    activeDiv.style.display = 'block';
+  }
+
+
+  const checkpoint = 600;
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= checkpoint) {
+      opacity = currentScroll / checkpoint;
+    } else {
+      opacity = 1;
+    }
+    document.querySelector(".timelineImg").style.opacity = opacity;
+  });
+</script>
+<script>
+    
+        // Get the elements with class="column"
+        var elements = document.getElementsByClassName("column");
+    
+        // Declare a loop variable
+        var i;
+    
+        // Full-width images
+        function one() {
+            for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "100%";  // IE10
+            elements[i].style.flex = "100%";
+          }
+        }
+    
+        // Two images side by side
+        function two() {
+          for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "50%";  // IE10
+            elements[i].style.flex = "50%";
+          }
+        }
+    
+        // Four images side by side
+        function four() {
+          for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "25%";  // IE10
+            elements[i].style.flex = "25%";
+          }
+        }
+    
+        function toggle_visibility(id, ot1,ot2,ot3) {
+           var e = document.getElementById(id);
+           var o1 = document.getElementById(ot1);
+           var o2 = document.getElementById(ot2);
+           var o3 = document.getElementById(ot3);
+           if(o1.style.display == 'block')
+              o1.style.display = 'none';
+          if(o2.style.display == 'block')
+              o2.style.display = 'none';
+          if(o3.style.display == 'block')
+              o3.style.display = 'none';
+          if(e.style.display == 'block')
+              e.style.display = 'none';
+          else
+              e.style.display = 'block';
+        }
+    
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myHeader");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+
 </html>
 
 
