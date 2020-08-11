@@ -166,29 +166,32 @@ html {
   }
   .githubIcon{
     cursor:pointer; 
-    position:absolute; 
-    left: 20%; 
+    position:relative; 
+    /* left: 15%;  */
+    margin-right:10px;    
     margin-top:55px; 
     width:30px
   }
   .emailIcon{
     cursor:pointer; 
-    position:absolute; 
-    right:20%; 
-    margin-top:59px; 
+    position:relative; 
+    /* right:15%;  */
+    margin-right:10px;        
+    margin-top:50px; 
     width:30px
   }
   .linkedinIcon{
     cursor:pointer; 
-    position:absolute; 
-    right:35%; 
+    position:relative; 
+    /* right:30%;  */
     margin-top:55px; 
+    margin-right:10px;    
     width:30px
   }
   .mediumIcon{
     cursor:pointer; 
-    position:absolute; 
-    left:35%; 
+    position:relative; 
+    /* left:30%;  */
     margin-top:55px; 
     width:40px
   }
